@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import "./App.css";
 
 function App(): React.JSX.Element {
@@ -12,8 +13,23 @@ function App(): React.JSX.Element {
             <p>
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload.
-            </p>
-        </div>
+        </p>
+
+
+        <div className="red" style={{ backgroundColor: 'red' }}> {/* and i thought tailwind was bad */}
+          <Button onClick={ () => { console.log("Hello World!") } }>Log Hello World</Button>
+          <img src="../assets/images/pet-ada.jpg" alt="A picture of my dog Ada" />
+          Unordered List:
+              <ul>
+                  <li>First thing</li>
+                  <li>Another thing</li>
+                  <li>A third item</li>
+              </ul>
+
+          </div>;
+
+      </div>
+
     );
 }
 
